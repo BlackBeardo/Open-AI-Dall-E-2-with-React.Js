@@ -21,7 +21,9 @@ function App() {
     const res = await openai.createImage({
       prompt: prompt,
       n: 1,
-      size: "512x512",
+      // size: "256x256",
+      // size: "512x512",
+      size: "1024x1024",
     });
     setLoading(false);
     setResult(res.data.data[0].url);
@@ -64,3 +66,10 @@ function App() {
 }
 
 export default App;
+
+// whats after git init
+//what after git add .
+//what after git commit -m "first commit
+//what after git branch -M main
+//what after git remote add origin
+//what after git push -u origin main
