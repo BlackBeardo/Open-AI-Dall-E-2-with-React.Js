@@ -27,7 +27,9 @@ function App() {
     });
     setLoading(false);
     setResult(res.data.data[0].url);
+    console.log(res.data);
   };
+
   return (
     <div className="app-main">
       {loading ? (
