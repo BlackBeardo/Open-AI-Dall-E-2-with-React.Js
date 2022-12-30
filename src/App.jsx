@@ -27,7 +27,7 @@ function App() {
     });
     setLoading(false);
     setResult(res.data.data[0].url);
-    console.log(res.data);
+    // console.log(res.data);
   };
 
   return (
