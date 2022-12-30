@@ -16,7 +16,7 @@ function App() {
   const openai = new OpenAIApi(configuration);
 
   const generateImage = async () => {
-    setPlaceholder(`Searched for.... ${prompt}..`);
+    setPlaceholder(prompt);
     setLoading(true);
     const res = await openai.createImage({
       prompt: prompt,
